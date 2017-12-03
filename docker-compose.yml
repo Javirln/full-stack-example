@@ -1,0 +1,8 @@
+version: '3'
+services:
+  api:
+    image: 'clue/json-server:latest'
+    ports:
+      - '3000:80'
+    volumes:
+      - './backend/db.json/:/data/db.json'

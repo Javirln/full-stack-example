@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <img width="300" alt="Angular Logo" src="https://image.flaticon.com/icons/svg/99/99954.svg">
+</div>
+<h2>Here are some pizzas: </h2>
+<div *ngFor="let pizza of pizzas">
+  {{pizza?.name}}
+  <ol>
+    <li *ngFor="let topping of pizza?.toppings">
+      {{topping?.name}}
+    </li>
+  </ol>
+</div>
